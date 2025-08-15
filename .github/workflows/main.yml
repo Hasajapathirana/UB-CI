@@ -38,11 +38,8 @@ jobs:
               curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
               chmod a+rx ~/bin/repo
 
-       - name: Adding required software
+       - name: Building kernel
          run: |
+               ln -s deviceinfo-** deviceinfo
+               sudo bash build.sh -b workdir 
                
-               sudo bash build.sh -b workdir SEC_BUILD_CONF_VENDOR_BUILD_OS=14
-
-liblz4-tool bc lzop imagemagick libncurses5 rsync \
-
-python-is-python3 python2
