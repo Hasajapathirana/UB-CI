@@ -11,8 +11,8 @@ deviceinfo_ubuntu_touch_release="focal"
 ##########
 # Kernel
 
-deviceinfo_kernel_source="https://github.com/Hasajapathirana/android_kernel_samsung_p3s.git"
-deviceinfo_kernel_source_branch="halium-14"
+deviceinfo_kernel_source="https://github.com/FreeRunner4ever/android_kernel_samsung_universal2100.git"
+deviceinfo_kernel_source_branch="lineage-22"
 deviceinfo_kernel_defconfig="exynos2100-p3sxxx_defconfig"
 deviceinfo_kernel_clang_compile="true"
 deviceinfo_kernel_clang_revision="r383902"
@@ -36,6 +36,6 @@ deviceinfo_flash_offset_second="0x0"
 deviceinfo_flash_offset_tags="0x0"
 deviceinfo_flash_offset_dtb="0x1ce5000"
 deviceinfo_rootfs_image_sector_size="4096"
-deviceinfo_kernel_cmdline="console=tty0"
+deviceinfo_kernel_cmdline="console=tty0 systempart=/dev/block/by-name/system"
 deviceinfo_ramdisk_compression="lz4"
  
