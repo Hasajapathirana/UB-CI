@@ -27,8 +27,6 @@ jobs:
          run: |
               sudo dpkg --add-architecture i386
               sudo apt update
-              echo export PATH=\$PATH:\$HOME/bin >> ~/.bashrc
-              source ~/.bashrc
               curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
               chmod a+rx ~/bin/repo
 
