@@ -1,0 +1,41 @@
+##########
+# Basic device information
+
+deviceinfo_name="Samsung Galaxy S21 Ultra 5G"
+deviceinfo_manufacturer="Samsung"
+deviceinfo_codename="p3s"
+deviceinfo_arch="aarch64"
+deviceinfo_halium_version="14"
+deviceinfo_ubuntu_touch_release="focal"
+
+##########
+# Kernel
+
+deviceinfo_kernel_source="https://github.com/Hasajapathirana/android_kernel_samsung_p3s.git"
+deviceinfo_kernel_source_branch="halium-14"
+deviceinfo_kernel_defconfig="exynos2100-p3sxxx_defconfig"
+deviceinfo_kernel_clang_compile="true"
+deviceinfo_kernel_clang_revision="r383902"
+deviceinfo_kernel_image_name="Image"
+deviceinfo_kernel_use_dtc_ext="true"
+##########
+# Boot image
+
+deviceinfo_bootimg_header_version="3"
+deviceinfo_bootimg_os_version="11.0.0"
+deviceinfo_bootimg_os_patch_level="2024-12"
+deviceinfo_bootimg_qcdt="false"
+deviceinfo_bootimg_prebuilt_dtb="exynos.dtb"
+deviceinfo_bootimg_partition_size="67108864"
+deviceinfo_bootimg_board="EXYNOS2100"
+deviceinfo_flash_pagesize="4096"
+deviceinfo_flash_offset_base="0x0"
+deviceinfo_flash_offset_kernel="0x1000"
+deviceinfo_flash_offset_ramdisk="0x1c1c000"
+deviceinfo_flash_offset_second="0x0"
+deviceinfo_flash_offset_tags="0x0"
+deviceinfo_flash_offset_dtb="0x1ce5000"
+deviceinfo_rootfs_image_sector_size="4096"
+deviceinfo_kernel_cmdline="console=tty0"
+deviceinfo_ramdisk_compression="lz4"
+ 
